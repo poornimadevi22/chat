@@ -1,0 +1,157 @@
+//hw pending tasks
+
+
+2.css rule
+Rounded Corners: The first rule uses the border-radius property to create rounded corners. You can adjust the 10px value to control the radius.
+
+Dashed Border: The second rule uses the border property to create a dashed border. You can customize the border width (2px in the example) and color (#333 in the example).
+
+Grayscale Effect: The third rule uses the filter property with the grayscale() function to apply a grayscale effect to the images. The value 100% makes the images completely grayscale. You can adjust this value if you want a less intense effect.
+
+3.css 2d rule for translate()
+The translate property defines x- and y-coordinates of an element in 2D. You can also define the z-coordinate to change position in 3D.
+tochange position of element,uses
+div{
+    translate: 100px 20px;
+}
+
+
+4.use clip to change image property
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+img {
+  position: absolute;
+  clip: rect(5px,80px,10px);
+}
+</style>
+</head>
+<body>
+
+<img src="https://camo.githubusercontent.com/da092347de875d0327cd7419f20b2af6866b43deafeeddd038e7428b0938ad13/68747470733a2f2f656e637279707465642d74626e302e677374617469632e636f6d2f696d616765733f713d74626e253341414e6439476352315775514c486a616f71464c5142564a54506d71564736576649774b326a447866315241796343514a4a6875686a69743626757371703d434155" width="100" height="140">
+
+</body>
+</html>
+
+5.Use CSS to set a background image should be centered and should not repeat.
+body {
+    background-image:();
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+  }
+  
+
+
+6. use tooltip for hovering over it.
+<!DOCTYPE html>
+<html>
+<style>
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+</style>
+<body style="text-align:center;">
+
+<h2>Bottom Tooltip</h2>
+<p>Move the mouse over the text below:</p>
+
+<div class="tooltip">Hover over me
+  <span class="tooltiptext">Tooltip text</span>
+</div>
+
+</body>
+
+7.Write CSS rules to set the direction of the flexible items inside the <div></div> element in reverse order.
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  
+
+8.Give the <div> element an image border using the image "border.png". Slice the image at 30px and stretch it.
+    .sliced-image {
+        width: 200px;
+        height: 200px;
+        overflow: hidden; /* Hide the overflow content */
+      }
+
+9.Give the <div> element a rounded corner (25px radius) on the bottom left side.
+    #rcorners1 {
+        border-radius: 15px 50px 0 0;
+        background: #73AD21;
+        padding: 20px;
+        width: 200px;
+        height: 150px;
+      }
+10.Remove the transparency/opacity of the <img> element when the user hovers over it with the mouse pointer.
+<div class="image-container">
+    <img src="https://img.freepik.com/free-vector/floral-frame-card-design-illustration_53876-34974.jpg" alt="Image" />
+</div>
+.image-container:hover img {
+    opacity: 0.5; 
+  }
+  
+
+
+11.Position the <div> element all the way to the right using absolute positioning.
+    div.absolute {
+        position: absolute right;
+        top: 80px;
+        right: 0;
+        width: 200px;
+        height: 100px;
+        border: 3px solid #73AD21;
+      }
+
+12.Add a scrollbar to the <div> element
+    <div>
+        <div id="scrollable">
+        If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+          If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+          If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+          If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+          If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+          If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+          If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".
+        
+      </div>
+
+ 13.media rule to change only the font size of web page when it's resized.
+
+ The default font size for the webpage is set to 16px.for example,
+ The first media query (@media (max-width: 600px)) changes the font size to 14px when the screen width is 600 pixels or less.
+ The second media query (@media (max-width: 900px)) changes the font size to 12px when the screen width is 900 pixels or less
+
+
+
+   
+   
+14. use transform to rotate context.
+    div.a {
+        transform: rotate(20deg);
+      }
